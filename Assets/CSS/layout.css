@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+:root{
+  --bg-color: #188BDC;
+  --button-add: #0a456e;
+  --button-add-hover: #021a2b;
+  --li-color: #021d30;
+  --button-delete: #f84545;
+  --button-hover: #9e1515;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+}
+
+*::-webkit-scrollbar{
+  background: var(--bg-color);
+  width: 12px;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #0a456e;
+}
+
+body{
+  background: var(--bg-color);
+}
+
+body .sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body #container{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+body .imagem{
+  display: grid;
+  place-items: center;
+}
+
+body .imagem img{
+  width: 100%;
+  animation: fotoToDo 4s linear infinite;
+}
+
+@keyframes fotoToDo{
+  0%{
+    transform: translateY(0);
+  }
+  35%{
+    transform: translateY(-5px);
+  }
+  70%{
+    transform: translateY(5px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+body .container-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1vw 0;
+}
+
+body .box-list{
+  width: 80%;
+}
+
+h1{
+  font-size: 3vw;
+}
+
+h1:hover{
+  color: var(--button-add);
+}
+
+h2{
+  margin: 1.2vw 0;
+  font-size: 1.5vw;
+}
+
+body .addToList{
+  border-radius: .6vw;
+}
+
+body .writeTasks{
+  font-size: 1.2vw;
+  padding: .6vw;
+  border: 0;
+  border-radius: 1vw;
+  width: 70%;
+  color: black;
+}
+
+body #addTasks{
+  border: 0;
+  border-radius: 1vw;
+  margin-left: .9vw;
+  font-size: 1vw;
+  padding: .9vw;
+  cursor: pointer;
+  background-color: #0a456e;
+}
+
+body #addTasks:hover{
+  background-color: #021a2b;
+  box-shadow: .2vw .2vw black;
+}
+
+/* Tarefa adicionada */
+.container-items{
+  margin-top: 2vw;
+  width: 90%;
+}
+
+button{
+  height: 3vw;
+  width: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .6vw;
+  border: 0;
+  border-radius: 100%;
+  cursor: pointer;
+  margin-left:auto;
+  font-weight: bold;
+  color: black;
+  background: var(--button-delete);
+}
+
+button::before{
+  content: "\f2ed";
+  font-family: FontAwesome;
+  font-size: 2vw;
+  font-weight: 400;
+}
+
+button:hover{
+  background: var(--button-hover);
+  color: white;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  font-size: 1.4vw;
+  color: var(--li-color);
+  font-weight: bold;
+  margin-bottom: 1.3vw;
+}

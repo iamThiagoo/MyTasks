@@ -1,0 +1,47 @@
+/* Responsividade para mobile e tablet*/
+@media screen and (max-width:600px){
+    body #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body .imagem img{
+        width: 95%;
+    }
+    h1, h2{
+        text-align: center;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    body .container-list{
+        display: flex;
+        align-items: center;
+    }
+    .addToList{
+        margin-top: 15px;
+    }
+    body .writeTasks{
+        font-size: 12px;
+    }
+    body #addTasks{
+        font-size: 8px;
+    }
+    .container-items{
+        margin-top: 20px;
+    }
+    button{
+        height: 25px;
+        width: 25px;
+    }
+    button::before{
+        font-size: 15px;
+    }
+    li{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}

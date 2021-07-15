@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="Assets/CSS/layout.css">
+        <link rel="stylesheet" href="Assets/CSS/responsividade.css">
+
+        <title>MyTasks</title>
+    </head>
+    <body>
+        <div id="container">
+            <div class="imagem">
+                <img src="Assets/Imagens/to-do.png" alt="Lista de tarefas">
+            </div>
+
+            <div class="container-list">
+                <div class="box-list">
+                    <div class="anunciado">
+                        <a href="index.html"><h1>MyTasks</h1></a>
+                        <h2>O lugar ideal para você anotar os seus afazeres, para não esquecê-los!</h2>
+                    </div>
+                    <div class="addToList">
+                        <div class="tasks">
+                            <label class="sr-only" for="writeTasks">Escreva a tarefa aqui!</label>
+                            <input type="text" class="writeTasks" placeholder="Escreva aqui a sua tarefa">
+                            <label class="sr-only" for="addTasks">Adicione a tarefa aqui!</label>
+                            <input type="button" value="Adicionar tarefa" id="addTasks" role="button">
+                        </div>
+                        <div class="container-items">
+                            <ul class="tasksToDo"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/db9bd9c113.js" crossorigin="anonymous"></script>
+        <script src="Assets/JavaScript/script.js"></script>
+    </body>
+</html>

@@ -73,10 +73,3 @@ document.addEventListener("click", (e) => {
         saveTasks();
     }
 });
-
-try {
-    addSaveTasks();
-    console.log(`SEM ERRO!`);
-} catch(e){
-    console.log(`Tem algum erro aí`);
-}
